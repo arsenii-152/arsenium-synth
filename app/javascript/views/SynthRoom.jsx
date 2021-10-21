@@ -5,8 +5,6 @@ import ToneSynth from '../module_components/ToneSynth'
 import ChorusEffect from '../module_components/ChorusEffect'
 import Channel from '../module_components/Channel'
 import VibratoEffect from '../module_components/VibratoEffect'
-import ChebyshevEffect from '../module_components/ChebyshevEffect'
-import TremoloEffect from '../module_components/TremoloEffect'
 
 export default class SynthRoom extends PureComponent {
   constructor(props) {

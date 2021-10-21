@@ -99,10 +99,7 @@ export default class SynthContainer extends PureComponent {
       (time, note) => {
         melodySynthNode.triggerAttackRelease(note, 0.8, time)
       },
-      [
-        'A3', "B4", "D4", "E4", "C4", "F4", "G3",
-        'A2', "B3", "D3", "E3", "C3", "F3", "G2"
-      ]
+      ['A3', "B4", "D4", "E4", "C4", "F4", "G3",]
     ).start(0)
 
     Tone.Transport.start()
