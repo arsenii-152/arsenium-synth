@@ -1,0 +1,115 @@
+.SynthRoom {
+  display: grid;
+  grid-template-rows: 40% 50%;
+  min-height: 100vh;
+  & > div {
+    border: 2px solid white;
+    &:last-child {
+      border-right: 2 solid white;
+    }
+  }
+  .firstName {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+  }
+  .ToneSynth {
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    background: linear-gradient(90deg, #484848 0%, #383838 100%);
+    border-bottom: solid, 10px, black;
+    border-top: solid, 10px, #000000;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 50%;
+
+    .Slider:nth-child(2) {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+    .Slider:nth-child(3) {
+      grid-column-start: 1;
+      grid-row-start: 3;
+    }
+    .Slider:nth-child(4) {
+      grid-column-start: 2;
+      grid-row-start: 3;
+    }
+    .Slider:nth-child(5) {
+      grid-column-start: 3;
+      grid-row-start: 3;
+    }
+
+    .ButtonSet {
+      grid-row-start: 2;
+      grid-column-start: 2;
+      grid-column-end: span 2;
+      grid-row-end: span 2;
+    }
+    h2 {
+      grid-row-start: 1;
+      grid-column-start: 2;
+      grid-column-end: span 2;
+    }
+  }
+  .VibratoEffect {
+    height: 474.5px;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    background: linear-gradient(90deg, #484848 0%, #383838 100%);
+    border-bottom: solid, 10px, black;
+    border-top: solid, 10px, #000000;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    .Slider:nth-child(2) {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+    .Slider:nth-child(3) {
+      grid-column-start: 1;
+      grid-row-start: 3;
+    }
+    .Slider:nth-child(4) {
+      grid-column-start: 1;
+      grid-row-start: 4;
+    }
+    .Slider:nth-child(5) {
+      grid-column-start: 1;
+      grid-row-start: 5;
+    }
+    .ButtonSet {
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+  }
+
+  h1 {
+    font-size: 25px;
+    width: 100vw;
+    padding: 0 20px;
+    line-height: 60px;
+    font-weight: bold;
+  }
+
+  h2 {
+    padding: 0 20px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .Slider {
+    padding: 0px 20px 25px 20px;
+  }
+
+  .Knob {
+    grid-row-end: span 3;
+    width: 100%;
+    padding: 20px;
+  }
+}

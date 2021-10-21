@@ -1,0 +1,15 @@
+.Button {
+  padding: 18px 22px;
+  font-size: 144px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #0b0b0b;
+  color: #606060;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0b0b0b;
+    color: #235f8b;
+  }
+}

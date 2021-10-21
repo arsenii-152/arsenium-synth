@@ -1,0 +1,30 @@
+.ToggleButton {
+  // margin: 0 4px 4px 0;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0b0b0b;
+  color: #606060;
+  cursor: pointer;
+  border-right: 1px solid #606060;
+
+  &:last-child {
+    border-right: none;
+  }
+  &:hover:not(.active) {
+    background-color: #0b0b0b;
+    color: #235f8b;
+  }
+
+  &.active {
+    font-weight: 800;
+    color: #3c9de4;
+    background-color: #0b0b0b;
+    cursor: default;
+  }
+  &.active h4 {
+    text-shadow: 2px 2px 4px #3c9de4;
+  }
+}
