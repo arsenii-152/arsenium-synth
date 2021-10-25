@@ -1,6 +1,6 @@
 .SynthRoom {
   display: grid;
-  grid-template-rows: 40% 50%;
+  grid-template-rows: 50% 50%;
   min-height: 100vh;
   & > div {
     border: 2px solid white;
@@ -10,7 +10,7 @@
   }
   .firstName {
     width: 100%;
-    text-align: center;
+    text-align: left;
     align-self: center;
     grid-column-start: 1;
     grid-row-start: 1;
@@ -24,30 +24,18 @@
     border-bottom: solid, 10px, black;
     border-top: solid, 10px, #000000;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 20% 20% 20% 50%;
+    grid-template-columns: 25% 25% 25% 12% 12%;
+    grid-template-rows: 20% 20% 20% 40%;
 
     .Slider:nth-child(2) {
       grid-column-start: 1;
       grid-row-start: 2;
     }
-    .Slider:nth-child(3) {
-      grid-column-start: 1;
-      grid-row-start: 3;
-    }
-    .Slider:nth-child(4) {
-      grid-column-start: 2;
-      grid-row-start: 3;
-    }
-    .Slider:nth-child(5) {
-      grid-column-start: 3;
-      grid-row-start: 3;
-    }
 
     .ButtonSet {
       grid-row-start: 2;
       grid-column-start: 2;
-      grid-column-end: span 2;
+      grid-column-end: span 1;
       grid-row-end: span 2;
     }
     h2 {
@@ -55,36 +43,11 @@
       grid-column-start: 2;
       grid-column-end: span 2;
     }
-  }
-  .VibratoEffect {
-    height: 474.5px;
-    grid-row-start: 2;
-    grid-row-end: span 1;
-    background: linear-gradient(90deg, #484848 0%, #383838 100%);
-    border-bottom: solid, 10px, black;
-    border-top: solid, 10px, #000000;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    .Slider:nth-child(2) {
-      grid-column-start: 1;
-      grid-row-start: 2;
-    }
-    .Slider:nth-child(3) {
-      grid-column-start: 1;
-      grid-row-start: 3;
-    }
-    .Slider:nth-child(4) {
-      grid-column-start: 1;
-      grid-row-start: 4;
-    }
-    .Slider:nth-child(5) {
-      grid-column-start: 1;
-      grid-row-start: 5;
-    }
-    .ButtonSet {
-      grid-column-start: 2;
-      grid-row-start: 2;
+    .ButtonSet > div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
     }
   }
 
@@ -104,10 +67,11 @@
   }
 
   .Slider {
-    padding: 0px 20px 25px 20px;
+    padding: 0px 0px 0px 20px;
   }
 
   .Knob {
+    border: 1px solid white;
     grid-row-end: span 3;
     width: 100%;
     padding: 20px;

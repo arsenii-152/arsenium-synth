@@ -17,7 +17,7 @@ export default class ToneSynth extends Component {
 
   updateNodeParams = () => {
     const { node, settings } = this.props
-    const { volume, detune, portamento, envelope, oscillator } = settings
+    const { volume, detune, envelope, oscillator } = settings
     const { type, phase, harmonicity } = oscillator
 
     const {
@@ -32,8 +32,6 @@ export default class ToneSynth extends Component {
 
     node.volume.value = volume
     node.detune.value = detune
-    node.portamento = portamento
-
     node.oscillator.type = type
     node.oscillator.phase = phase
 
@@ -115,19 +113,10 @@ export default class ToneSynth extends Component {
         <Slider
           name="Volume"
           property={['volume']}
-          min={-20}
+          min={-40}
           max={10}
           step={0.01}
           value={volume}
-          handleChange={this.handlePropertyValueChange}
-        />
-        <Slider
-          name="Portamento"
-          property={['portamento']}
-          min={0}
-          max={1}
-          step={0.1}
-          value={portamento}
           handleChange={this.handlePropertyValueChange}
         />
 

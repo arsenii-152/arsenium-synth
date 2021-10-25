@@ -32,18 +32,6 @@ export default class SynthRoom extends PureComponent {
             />
           )
           break
-        case 'Vibrato':
-          instrumentElement = (
-            <VibratoEffect
-              id={id}
-              name={name}
-              node={node}
-              settings={settings}
-              handlePropertyValueChange={handlePropertyValueChange}
-              key={i}
-            />
-          )
-          break
       }
 
       instrumentElements.push(instrumentElement)

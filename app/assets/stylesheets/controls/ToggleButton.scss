@@ -1,17 +1,20 @@
 .ToggleButton {
   // margin: 0 4px 4px 0;
   padding: 8px 10px;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   background-color: #0b0b0b;
   color: #606060;
   cursor: pointer;
-  border-right: 1px solid #606060;
-
+  border-bottom: 1px solid #606060;
+  &:first-child {
+    border-radius: 25px 25px 0px 0px;
+  }
   &:last-child {
-    border-right: none;
+    border-bottom: none;
+    border-radius: 0px 0px 25px 25px;
   }
   &:hover:not(.active) {
     background-color: #0b0b0b;
