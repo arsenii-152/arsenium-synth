@@ -163,45 +163,14 @@ export default class Knob extends PureComponent {
             <div style={styles}></div>
           </div>
 
-          <div className="group" id="group1">
-            <div className="bullet"></div>
-            <div className="bullet"></div>
-          </div>
+          <div className="group" id="group2"></div>
 
-          <div className="group" id="group2">
-            <div className="bullet"></div>
-            <div className="bullet"></div>
-          </div>
+          <div className="group" id="group3"></div>
 
-          <div className="group" id="group3">
-            <div className="bullet"></div>
-            <div className="bullet"></div>
-          </div>
-
-          <div className="lastBullet"> </div>
+          <div className="Counter">{value}</div>
 
           <div className="value" id="value7">
             {min}
-          </div>
-
-          <div className="value" id="value9">
-            {`${bullets[0]}`}
-          </div>
-
-          <div className="value" id="value11">
-            {`${bullets[1]}`}
-          </div>
-
-          <div className="value" id="value12">
-            {`${bullets[2]}`}
-          </div>
-
-          <div className="value" id="value2">
-            {`${bullets[3]}`}
-          </div>
-
-          <div className="value" id="value3">
-            {`${bullets[4]}`}
           </div>
 
           <div className="value" id="value5">
