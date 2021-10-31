@@ -5,7 +5,7 @@
   align-items: center;
 
   .wrapper {
-    padding-top: 50px;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     align-content: flex-start;
@@ -54,17 +54,16 @@
     .Counter {
       font-size: 18px;
       color: var(--blue);
-      font-family: 'PF-Online';
+      font-family: 'PF-Online-Single';
       display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-content: center;
+      padding-top: 4px;
       justify-content: center;
       align-items: center;
-      width: 50px;
-      height: 20px;
+      width: 60px;
+      height: 30px;
       background: #0b0b0b;
       border-radius: 57px;
+      text-shadow: 2px 2px 4px #3c9de4;
     }
     .value {
       position: absolute;

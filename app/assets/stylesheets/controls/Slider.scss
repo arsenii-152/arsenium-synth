@@ -1,8 +1,31 @@
 .Slider {
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-
+  align-items: flex-start;
+  .Slide-wrap {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .Counter {
+    margin-right: 10px;
+    font-size: 18px;
+    color: var(--blue);
+    font-family: 'PF-Online-Single';
+    display: flex;
+    padding-top: 4px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background: #0b0b0b;
+    border-radius: 57px;
+    text-shadow: 2px 2px 4px #3c9de4;
+  }
   h3 {
     margin-top: 10px;
     margin-bottom: 5px;

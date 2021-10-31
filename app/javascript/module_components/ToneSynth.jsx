@@ -113,8 +113,8 @@ export default class ToneSynth extends Component {
         <Slider
           name="Volume"
           property={['volume']}
-          min={-40}
-          max={10}
+          min={0}
+          max={40}
           step={0.01}
           value={volume}
           handleChange={this.handlePropertyValueChange}

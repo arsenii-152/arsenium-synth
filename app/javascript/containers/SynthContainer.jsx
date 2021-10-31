@@ -97,9 +97,13 @@ export default class SynthContainer extends PureComponent {
     // prettier-ignore
     const seq = new Tone.Sequence(
       (time, note) => {
-        melodySynthNode.triggerAttackRelease(note, 0.8, time)
+        melodySynthNode.triggerAttackRelease(note, 1, time)
       },
-      ['A3', "B4", "D4", "E4", "C4", "F4", "G3",]
+
+      ['A4', 'B4', 'C4', 'E4', 'E4','E4','E4',
+       'A4', 'B4', 'C4', 'F4', 'F4','F4','F4',
+       'A4', 'B4', 'C4', 'A4', 'F4'
+     ]
     ).start(0)
 
     Tone.Transport.start()

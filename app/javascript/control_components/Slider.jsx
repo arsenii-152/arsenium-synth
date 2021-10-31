@@ -18,16 +18,18 @@ export default class Slider extends PureComponent {
     return (
       <div className="Slider">
         <h3>{name}</h3>
-
-        <input
-          ref={this.input}
-          type="range"
-          min={min}
-          max={max}
-          step={step}
-          value={value}
-          onInput={this.handleChange}
-        />
+        <div className="Slide-wrap">
+          <div className="Counter">{value}</div>
+          <input
+            ref={this.input}
+            type="range"
+            min={min}
+            max={max}
+            step={step}
+            value={value}
+            onInput={this.handleChange}
+          />{' '}
+        </div>
       </div>
     )
   }
